@@ -3,20 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#f4f0e8">
+	<meta name="theme-color" content="#151916">
 	<title>Transportadora Pimentel | Gestor de Frota</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="site-header">
-		<p>TRANSPORTADORA PIMENTEL · GESTOR DE FROTA</p>
+		<div class="header-inner">
+			<a class="brand" href="#inicio" aria-label="Transportadora Pimentel, início">
+				<span class="brand-mark" aria-hidden="true">TP</span>
+				<span>TRANSPORTADORA<br>PIMENTEL</span>
+			</a>
+			<p class="header-note">CARREIRAS <span aria-hidden="true">/</span> OPERAÇÕES</p>
+		</div>
 	</header>
 
-	<main id="inicio">
+	<main id="inicio" class="application-layout">
+		<section class="job-intro" aria-labelledby="job-title">
+			<p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PROCESSO SELETIVO</p>
+			<h1 id="job-title">Gestor de<br><span>Frota</span></h1>
+			<p class="job-description">Estamos em busca de pessoas organizadas e responsáveis para fortalecer nossa operação de transportes.</p>
+			<div class="job-summary">
+				<p><span>ÁREA</span><strong>Operações e logística</strong></p>
+				<p><span>DISPONIBILIDADE</span><strong>Tarde ou pernoite</strong></p>
+			</div>
+			<p class="intro-note">Conte um pouco sobre sua experiência. Nossa equipe entrará em contato.</p>
+		</section>
+
 		<section class="form-panel" aria-labelledby="form-title">
 			<div class="form-heading">
-				<h1 id="form-title">Candidatura a Gestor de Frota</h1>
-				<p>Preencha seus dados para se candidatar à equipe da Transportadora Pimentel.</p>
+				<p class="form-step">01 <span>/</span> CANDIDATURA</p>
+				<h2 id="form-title">Seus dados</h2>
+				<p>Os campos com <span aria-hidden="true">*</span> são obrigatórios.</p>
 			</div>
 
 			<form action="#confirmacao" method="get">
@@ -53,21 +71,21 @@
 					</div>
 
 					<fieldset class="field field-wide session-options">
-						<legend>Melhor horário para contato <span aria-hidden="true">*</span></legend>
+						<legend>Qual turno funciona melhor para você? <span aria-hidden="true">*</span></legend>
 						<div class="radio-list">
-							<label class="radio-option" for="horario-manha">
-								<input id="horario-manha" name="horario" type="radio" value="manha" required aria-required="true">
-								<span><strong>Manhã</strong><small>9h às 12h</small></span>
+							<label class="radio-option" for="turno-pernoite">
+								<input id="turno-pernoite" name="turno" type="radio" value="pernoite" required aria-required="true">
+								<span><strong>Pernoite</strong><small>22h às 6h</small></span>
 							</label>
-							<label class="radio-option" for="horario-tarde">
-								<input id="horario-tarde" name="horario" type="radio" value="tarde">
+							<label class="radio-option" for="turno-tarde">
+								<input id="turno-tarde" name="turno" type="radio" value="tarde">
 								<span><strong>Tarde</strong><small>14h às 17h</small></span>
 							</label>
 						</div>
 					</fieldset>
 
 					<div class="field field-wide">
-						<label for="observacoes">Algo que gostaria de contar? <span class="optional">Opcional</span></label>
+						<label for="observacoes">Conte um pouco sobre você <span class="optional">Opcional</span></label>
 						<textarea id="observacoes" name="observacoes" rows="3"></textarea>
 					</div>
 
@@ -78,13 +96,16 @@
 				</div>
 
 				<button class="submit-button" type="submit">Enviar candidatura <span aria-hidden="true">↗</span></button>
-				<p class="form-footnote"><span aria-hidden="true">*</span> Campos obrigatórios.</p>
+				<p class="form-footnote">A Transportadora Pimentel entrará em contato.</p>
 			</form>
 		</section>
 	</main>
 
 	<footer class="site-footer">
-		<p>Transportadora Pimentel</p>
+		<div class="footer-inner">
+			<p>TRANSPORTADORA PIMENTEL</p>
+			<p>OPORTUNIDADE EM OPERAÇÕES</p>
+		</div>
 	</footer>
 </body>
 </html>
